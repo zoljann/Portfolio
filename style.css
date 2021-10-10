@@ -16,7 +16,25 @@ body, html{
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    color:#FEFEFE;
+    color:#cfcfcf;
+}
+.box{
+    width: 320px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3%;
+}
+.box button{
+    font-size: 15pt;
+    width: 100px;
+    color:#cfcfcf;
+    background-color: #212121;
+    border: none;
+    border: 1px solid white;
+    border-radius: 15pt;
+    padding-top: 4%;
+    padding-bottom: 4%;
 }
 .logo img{
     position: absolute;
