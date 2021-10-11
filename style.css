@@ -5,6 +5,7 @@ body, html{
     margin: 0;
     padding: 0;
     font-family: "Consolas";
+    box-sizing: border-box;
     scroll-behavior: smooth;
 }
 body::-webkit-scrollbar {
@@ -42,10 +43,12 @@ body::-webkit-scrollbar {
     border-radius: 15pt;
     font-family: "Consolas";
     letter-spacing: -1pt;
+    transition: 0.5s;
 }
 button:hover{
     cursor: pointer;
-    color: rgb(33, 112, 230);
+    background-color:rgb(37, 75, 44);
+    color:#e0e0e0;
 }
 .logo img{
     position: absolute;
@@ -57,7 +60,6 @@ button:hover{
     position:fixed;
     top: 4%;
     right: 2%;
-    color: white;
     width: 100%;
     height: 30%;
     text-align: right;
@@ -66,6 +68,14 @@ button:hover{
     width: 35px;
     height: 35px;
 }
+.contact a img{
+    transition: 0.55s;
+}
+.contact a:hover img{
+   background-color:rgb(37, 75, 44);
+   padding: 3pt;
+   border-radius: 6pt;
+}
 .opis{
     width: 600px;
     margin: 0 auto 0 auto;
@@ -73,7 +83,7 @@ button:hover{
 }
 #colorfulDot{
     display: inline;
-    color: rgb(33, 112, 230);
+    color: rgb(60, 121, 71);
 }
 #photo{
     width: 640px;
