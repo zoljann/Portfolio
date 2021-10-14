@@ -73,8 +73,9 @@ button:hover{
 }
 .contact a:hover img{
    background-color:rgb(37, 75, 44);
-   padding: 3pt;
+   padding: 2pt;
    border-radius: 6pt;
+   opacity: 50%;
 }
 .opis{
     width: 600px;
