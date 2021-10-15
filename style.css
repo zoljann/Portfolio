@@ -1,5 +1,5 @@
 body, html{
-    background-color:#212121;
+    background-color: #0A192F;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -20,7 +20,7 @@ body::-webkit-scrollbar {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    color:white;
+    color:#a8b2d1
 }
 .box{
     width: 500px;
@@ -29,20 +29,20 @@ body::-webkit-scrollbar {
 }
 .box button{
     width: 90px;
-    height: 50px;
+    height: 40px;
     font-size: 12pt;
-    color:white;
-    background-color: #212121;
-    border: 1px solid #cfcfcf;
-    border-radius: 15pt;
+    color:#64ffda;
+    background-color: #0A192F;
+    border: 1px solid #64ffda;
+    border-radius: 3pt;
     font-family: "Consolas";
     letter-spacing: -1pt;
     transition: 0.5s;
+    margin: 1%;
 }
 button:hover{
     cursor: pointer;
-    background-color:rgb(37, 75, 44);
-    color:#e0e0e0;
+    background-color:#64ffdb28;
 }
 .logo img{
     position: absolute;
@@ -62,11 +62,11 @@ button:hover{
     width: 35px;
     height: 35px;
 }
-.contact a img{
+.contact img{
     transition: 0.6s;
 }
 .contact a:hover img{
-   background-color:rgb(69, 114, 78);
+   background-color:rgb(44, 117, 95);
    border-radius: 6pt;
 }
 .opis{
@@ -76,13 +76,31 @@ button:hover{
 }
 #colorfulDot{
     display: inline;
-    color: rgb(60, 121, 71);
+    color: #64ffda;
 }
 #photo{
     width: 640px;
     height: 370px;
 }
 
+.email-right{
+    position:fixed;
+    top: 62%;
+    right: 4%;
+    writing-mode: vertical-rl;
+    height: 400px;
+}
+.email-right a{
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    letter-spacing: 0.1em;
+    color: #a8b2d1;
+    margin-bottom: 8%;
+    transition: 0.3s;
+}
+.email-right a:hover{
+    color:#64ffda;
+}
 /* Second Page */
 
 #center2{
@@ -92,15 +110,70 @@ button:hover{
     justify-content: center;
     align-items: center;
 }
-.images{
-    width: 1200px;
-}
+
 #center2 img{
     width: 380px;
     height: 250px;
-    padding: 4pt;
-    border-radius: 30px;
+    border-radius: 10px;
+    transition: 1s;
 }
-img[class^="project"]:hover{
-    opacity: 0.5;
+#center2 button{
+    margin-top: 30px;
+    width: 150px;
+    height: 30px;
+    color:white;
+    border: 2px solid #156647;
+    border-radius: 10px;
+    transition: 0.5s;
+    background-color:rgb(44, 117, 95);
 }
+#center2 button:hover{
+    background-color: #156647;
+}
+.container {
+    position: relative;
+  }
+  .kontejneri{
+      display: flex;
+      flex-direction: row;
+      width: 1200px;
+      flex-wrap: wrap;
+  }
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.6s ease;
+    background-color:#233554;
+    border-radius: 10px;
+  }
+  .container:hover .overlay {
+    opacity: 1;
+  }
+
+
+  .container:hover img {
+    /*transform: scale(1.1); */
+  }
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 360px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
