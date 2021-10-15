@@ -1,179 +1,180 @@
-body, html{
-    background-color: #0A192F;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: "Consolas";
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+body,
+html {
+  background-color: #0a192f;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Consolas";
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body::-webkit-scrollbar {
-    display: none;
-  }
-.centerDiv{
-    width: 100%;
-    height: 100%;
-    display: table;
+  display: none;
 }
-#middlePart{
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    color:#a8b2d1
+.centerDiv {
+  width: 100%;
+  height: 100%;
+  display: table;
 }
-.box{
-    width: 500px;
-    margin: 4% auto 1% auto;
-   
+#middlePart {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #a8b2d1;
 }
-.box button{
-    width: 90px;
-    height: 40px;
-    font-size: 12pt;
-    color:#64ffda;
-    background-color: #0A192F;
-    border: 1px solid #64ffda;
-    border-radius: 3pt;
-    font-family: "Consolas";
-    letter-spacing: -1pt;
-    transition: 0.5s;
-    margin: 1%;
+.box {
+  width: 500px;
+  margin: 4% auto 1% auto;
 }
-button:hover{
-    cursor: pointer;
-    background-color:#64ffdb28;
+.box button {
+  width: 90px;
+  height: 40px;
+  font-size: 12pt;
+  color: #64ffda;
+  background-color: #0a192f;
+  border: 1px solid #64ffda;
+  border-radius: 3pt;
+  font-family: "Consolas";
+  letter-spacing: -1pt;
+  transition: 0.5s;
+  margin: 1%;
 }
-.logo img{
-    position: absolute;
-    width: 100px;
-    height: 70px;
-    margin: 2%;
+button:hover {
+  cursor: pointer;
+  background-color: #64ffdb28;
 }
-.contact{
-    position:fixed;
-    top: 4%;
-    right: 2%;
-    width: 100%;
-    height: 30%;
-    text-align: right;
+.logo img {
+  position: absolute;
+  width: 100px;
+  height: 70px;
+  margin: 2%;
 }
-.contact img{
-    width: 35px;
-    height: 35px;
+.contact {
+  position: fixed;
+  top: 4%;
+  right: 2%;
+  width: 100%;
+  height: 30%;
+  text-align: right;
 }
-.contact img{
-    transition: 0.6s;
+.contact img {
+  width: 35px;
+  height: 35px;
+  transition: 0.6s;
 }
-.contact a:hover img{
-   background-color:rgb(44, 117, 95);
-   border-radius: 6pt;
+.contact img:hover {
+  opacity: 0.6;
 }
-.opis{
-    width: 600px;
-    margin: 0 auto 0 auto;
-    letter-spacing: 1pt;
+.opis {
+  width: 600px;
+  margin: 0 auto 0 auto;
+  letter-spacing: 1pt;
 }
-#colorfulDot{
-    display: inline;
-    color: #64ffda;
+#colorfulDot {
+  display: inline;
+  color: #64ffda;
 }
-#photo{
-    width: 640px;
-    height: 370px;
+#photo {
+  width: 640px;
+  height: 370px;
+}
+.email-right {
+  position: fixed;
+  top: 62%;
+  right: 4%;
+  writing-mode: vertical-rl;
+  height: 400px;
+}
+.email-right a {
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #a8b2d1;
+  margin-bottom: 8%;
+  transition: 0.3s;
+}
+.email-right a:hover {
+  color: #64ffda;
+  margin-bottom: 6%;
 }
 
-.email-right{
-    position:fixed;
-    top: 62%;
-    right: 4%;
-    writing-mode: vertical-rl;
-    height: 400px;
-}
-.email-right a{
-    text-decoration: none;
-    text-decoration-skip-ink: auto;
-    letter-spacing: 0.1em;
-    color: #a8b2d1;
-    margin-bottom: 8%;
-    transition: 0.3s;
-}
-.email-right a:hover{
-    color:#64ffda;
-}
 /* Second Page */
 
-#center2{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#center2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-#center2 img{
-    width: 380px;
-    height: 250px;
-    border-radius: 10px;
-    transition: 1s;
+#center2 h2{
+    position:absolute;
+    margin-top: -40%;
+    color: #a8b2d1;
+    font-weight:normal;
 }
-#center2 button{
-    margin-top: 30px;
-    width: 150px;
-    height: 30px;
-    color:white;
-    border: 2px solid #156647;
-    border-radius: 10px;
-    transition: 0.5s;
-    background-color:rgb(44, 117, 95);
+#center2 img {
+  width: 380px;
+  height: 250px;
+  border-radius: 10px;
 }
-#center2 button:hover{
-    background-color: #156647;
+#center2 button {
+  margin-top: 10%;
+  width: 150px;
+  height: 30px;
+  color: white;
+  border: 1px solid #64ffda;
+  border-radius: 10px;
+  transition: 0.5s;
+  background-color: #112240;
+}
+#center2 button:hover {
+  background-color: #64ffdb28;
 }
 .container {
-    position: relative;
-  }
-  .kontejneri{
-      display: flex;
-      flex-direction: row;
-      width: 1200px;
-      flex-wrap: wrap;
-  }
-  .image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: 0.6s ease;
-    background-color:#233554;
-    border-radius: 10px;
-  }
-  .container:hover .overlay {
-    opacity: 1;
-  }
+  position: relative;
+  margin: 5pt;
+}
+.kontejneri {
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  flex-wrap: wrap;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.6s ease;
+  background-color: #112240;
+  border-radius: 10px;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
 
-
-  .container:hover img {
-    /*transform: scale(1.1); */
-  }
-  .text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 360px;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
+.container:hover img {
+  /*transform: scale(1.1); */
+}
+.text {
+  color: #a8b2d1;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 360px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
