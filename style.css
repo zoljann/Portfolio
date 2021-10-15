@@ -22,12 +22,6 @@ body::-webkit-scrollbar {
     text-align: center;
     color:white;
 }
-#middlePart2{
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    color:#cfcfcf;
-}
 .box{
     width: 500px;
     margin: 4% auto 1% auto;
@@ -69,13 +63,11 @@ button:hover{
     height: 35px;
 }
 .contact a img{
-    transition: 0.55s;
+    transition: 0.6s;
 }
 .contact a:hover img{
-   background-color:rgb(37, 75, 44);
-   padding: 2pt;
+   background-color:rgb(69, 114, 78);
    border-radius: 6pt;
-   opacity: 50%;
 }
 .opis{
     width: 600px;
@@ -89,4 +81,26 @@ button:hover{
 #photo{
     width: 640px;
     height: 370px;
+}
+
+/* Second Page */
+
+#center2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.images{
+    width: 1200px;
+}
+#center2 img{
+    width: 380px;
+    height: 250px;
+    padding: 4pt;
+    border-radius: 30px;
+}
+img[class^="project"]:hover{
+    opacity: 0.5;
 }
