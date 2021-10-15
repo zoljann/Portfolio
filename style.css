@@ -44,11 +44,43 @@ button:hover {
   cursor: pointer;
   background-color: #64ffdb28;
 }
-.logo img {
-  position: absolute;
-  width: 100px;
-  height: 70px;
-  margin: 2%;
+.logo{
+    position: absolute;
+    width: 300px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    margin: 1% 0 0 1%;
+}
+.logo h2{
+    color: #a8b2d1;
+    margin-left: 5%;
+}
+#tekstic{
+    width: 22ch;
+    animation: typing 10s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+}
+@keyframes typing {
+    from {
+      width: 0
+    }
+  }
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+  .logo img{
+   cursor: pointer;
+  }
+.logo img:hover ~ #tekstic{
+   color: white;
+   transition: 2s;
 }
 .contact {
   position: fixed;
@@ -57,6 +89,7 @@ button:hover {
   width: 100%;
   height: 30%;
   text-align: right;
+  z-index: 1;
 }
 .contact img {
   width: 35px;
@@ -116,7 +149,7 @@ button:hover {
 #center2 img {
   width: 380px;
   height: 250px;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 #center2 button {
   margin-top: 10%;
@@ -168,7 +201,7 @@ button:hover {
 }
 .text {
   color: #a8b2d1;
-  font-size: 20px;
+  font-size: 16px;
   position: absolute;
   top: 50%;
   left: 50%;
