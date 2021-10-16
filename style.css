@@ -78,10 +78,6 @@ button:hover {
   .logo img{
    cursor: pointer;
   }
-.logo img:hover ~ #tekstic{
-   color: white;
-   transition: 2s;
-}
 .contact {
   position: fixed;
   top: 4%;
@@ -189,7 +185,7 @@ button:hover {
   width: 100%;
   opacity: 0;
   transition: 0.6s ease;
-  background-color: #112240;
+  background-color: #051124;
   border-radius: 10px;
 }
 .container:hover .overlay {
