@@ -9,8 +9,12 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-body::-webkit-scrollbar {
-  display: none;
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #a8b2d146;
+  border-radius: 12px;
 }
 .centerDiv {
   width: 100%;
@@ -100,6 +104,14 @@ button:hover {
   margin: 0 auto 0 auto;
   letter-spacing: 1pt;
 }
+.opis a{
+  text-decoration: none;
+  color:#a8b2d1;
+  transition: 0.5s;
+}
+.opis a:hover{
+  color: #64ffda;
+}
 #colorfulDot {
   display: inline;
   color: #64ffda;
@@ -126,7 +138,6 @@ button:hover {
   color: #64ffda;
   margin-bottom: 6%;
 }
-
 /* Second Page */
 
 #center2 {
@@ -145,7 +156,6 @@ button:hover {
 #center2 img {
   width: 400px;
   height: 250px;
-  border-radius: 12px;
 }
 #center2 button {
   margin-top: 10%;
@@ -163,12 +173,15 @@ button:hover {
 .container {
   position: relative;
   margin: 5pt;
+  overflow: hidden;
+  border-radius: 12px;
 }
 .kontejneri {
   display: flex;
   flex-direction: row;
   width: 1300px;
   flex-wrap: wrap;
+  
 }
 .image {
   display: block;
@@ -186,14 +199,13 @@ button:hover {
   opacity: 0;
   transition: 0.6s ease;
   background-color: #051124;
-  border-radius: 10px;
 }
 .container:hover .overlay {
   opacity: 1;
 }
-
 .container:hover img {
-  /*transform: scale(1.1); */
+  transform: scale(1.1);
+  transition: 0.7s;
 }
 .text {
   color: #a8b2d1;
