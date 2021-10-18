@@ -281,6 +281,9 @@ footer {
   color: #a8b2d1;
   padding-bottom: 1px;
 }
+#opisZadnji{
+  color: #64ffda;
+}
 footer p {
   font-size: 10pt;
 }
