@@ -234,6 +234,15 @@ button:hover {
   font-size: 13pt;
   margin-right: 5%;
 }
+.aboutMe a{
+  text-decoration: none;
+  color:#a8b2d1;
+  transition: 0.5s;
+}
+.aboutMe a:hover{
+  color: #64ffda;
+ 
+}
 .aboutMe h1{
   color: white;
 }
@@ -241,13 +250,14 @@ button:hover {
   display: grid;
   grid-template-columns: repeat(2, minmax(140px, 200px));
   list-style: none;
+  font-size: 12pt;
 }
 ul li::before {
   content: '▹'; 
   color: #64ffda;
 }
 .maturska img{
-  width: 230px;
+  width: 240px;
   height: 320px;
   border-radius: 10px;
 }
