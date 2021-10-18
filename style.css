@@ -48,40 +48,40 @@ button:hover {
   cursor: pointer;
   background-color: #64ffdb28;
 }
-.logo{
-    position: absolute;
-    width: 300px;
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    margin: 1% 0 0 1%;
+.logo {
+  position: absolute;
+  width: 300px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  margin: 1% 0 0 1%;
 }
-.logo h2{
-    color: #a8b2d1;
-    margin-left: 5%;
+.logo h2 {
+  color: #a8b2d1;
+  margin-left: 5%;
 }
-#tekstic{
-    width: 22ch;
-    animation: typing 10s steps(22), blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    font-family: monospace;
-    font-size: 2em;
+#tekstic {
+  width: 22ch;
+  animation: typing 10s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
 }
 @keyframes typing {
-    from {
-      width: 0
-    }
+  from {
+    width: 0;
   }
-  @keyframes blink {
-    50% {
-      border-color: transparent
-    }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
   }
-  .logo img{
-   cursor: pointer;
-  }
+}
+.logo img {
+  cursor: pointer;
+}
 .contact {
   position: fixed;
   top: 4%;
@@ -104,12 +104,12 @@ button:hover {
   margin: 0 auto 0 auto;
   letter-spacing: 1pt;
 }
-.opis a{
+.opis a {
   text-decoration: none;
-  color:#a8b2d1;
+  color: #a8b2d1;
   transition: 0.5s;
 }
-.opis a:hover{
+.opis a:hover {
   color: #64ffda;
 }
 #colorfulDot {
@@ -147,11 +147,11 @@ button:hover {
   justify-content: center;
   align-items: center;
 }
-#center2 h2{
-    position:absolute;
-    margin-top: -40%;
-    color: #a8b2d1;
-    font-weight:normal;
+#center2 h2 {
+  position: absolute;
+  margin-top: -40%;
+  color: #a8b2d1;
+  font-weight: normal;
 }
 #center2 img {
   width: 400px;
@@ -181,7 +181,6 @@ button:hover {
   flex-direction: row;
   width: 1300px;
   flex-wrap: wrap;
-  
 }
 .image {
   display: block;
@@ -221,43 +220,95 @@ button:hover {
 }
 
 /* Third page */
-#thirdPage{
+#thirdPage {
   margin-left: auto;
   margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
   width: 60%;
   display: flex;
   flex-direction: row;
 }
-.aboutMe{
+#middlePart2 {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #a8b2d1;
+}
+.aboutMe {
   width: 70%;
   text-align: left;
   font-size: 13pt;
   margin-right: 5%;
 }
-.aboutMe a{
+.aboutMe a {
   text-decoration: none;
-  color:#a8b2d1;
+  color: #a8b2d1;
   transition: 0.5s;
 }
-.aboutMe a:hover{
+.aboutMe a:hover {
   color: #64ffda;
- 
 }
-.aboutMe h1{
+.aboutMe h1 {
   color: white;
 }
-.aboutMe ul{
+.aboutMe ul {
   display: grid;
   grid-template-columns: repeat(2, minmax(140px, 200px));
   list-style: none;
   font-size: 12pt;
 }
 ul li::before {
-  content: '▹'; 
+  content: "▹";
   color: #64ffda;
 }
-.maturska img{
+.maturska img {
   width: 240px;
   height: 320px;
   border-radius: 10px;
+}
+
+/*Fourth Page*/
+
+#fourthPage {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  font-size: 13pt;
+}
+footer {
+  text-align: center;
+  color: #a8b2d1;
+  padding-bottom: 1px;
+}
+footer p {
+  font-size: 10pt;
+}
+.outro {
+  position: absolute;
+  width: 500px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  margin: 5% 0% 0% 1%;
+}
+#tekstic2 {
+  color: #a8b2d1;
+  width: 22ch;
+  animation: typing 35s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
