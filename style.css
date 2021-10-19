@@ -170,6 +170,11 @@ button:hover {
 #center2 button:hover {
   background-color: #64ffdb28;
 }
+#process{
+  color:#64ffda;
+  font-size: 10pt;
+  font-style: italic;
+}
 .container {
   position: relative;
   margin: 5pt;
