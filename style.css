@@ -184,8 +184,10 @@ button:hover {
 .kontejneri {
   display: flex;
   flex-direction: row;
-  width: 1300px;
+  width: 80%;
   flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
 }
 .image {
   display: block;
@@ -329,24 +331,24 @@ footer p {
 @media only screen and (max-width: 600px) {
   body{
     font-size: 10pt;
-    padding: 3%;
+    padding: 2%;
   }
   #photo{
-    width: 360px;
-    height: 215px;
+    width: 90%;
+    height: 30%;
   }
   .logo{
     font-size: 8pt;
-    width: 200px;
+    width: 51%;
   }
   .logo img{
     width: 50px;
   }
-  .box,.opis, .contact{
+  .box,.opis, .contact, .kontejneri{
     width: 100%;
   }
   .container{
-    width: 180px;
+    width: 46%;
   }
   .overlay{
     width: 100%;
@@ -354,7 +356,11 @@ footer p {
   }
   .text{
     font-size: 10pt;
-    width: 178px;
+    width: 95%;
+  }
+  .contact img{
+    width: 28px;
+    height: 28px;
   }
   #center2 h2{
     display: none;
@@ -381,4 +387,8 @@ footer p {
     width: 100%;
     font-size: 12pt;
   }
+  footer p{
+    font-size: 6pt;
+  }
+  
 }
