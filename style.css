@@ -1,6 +1,6 @@
 body,
 html {
-  background-color: #0a192f;
+  background-color: var(--primary);
   width: 100%;
   height: 100%;
   margin: 0;
@@ -8,6 +8,13 @@ html {
   font-family: "Consolas";
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+:root{
+  --primary: #0a192f;
+  --secondary: #112240;
+  --textColor: #a8b2d1;
+  --teal: #64ffda;
+  --bHover: #64ffdb28;
 }
 ::-webkit-scrollbar {
   width: 6px;
@@ -27,7 +34,7 @@ html {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-  color: #a8b2d1;
+  color: var(--textColor);
 }
 .box {
   width: 50%;
@@ -37,9 +44,9 @@ html {
   width: 90px;
   height: 40px;
   font-size: 12pt;
-  color: #64ffda;
-  background-color: #0a192f;
-  border: 1px solid #64ffda;
+  color: var(--teal);
+  background-color: var(--primary);
+  border: 1px solid var(--teal);
   border-radius: 3pt;
   font-family: "Consolas";
   letter-spacing: -1pt;
@@ -48,18 +55,18 @@ html {
 }
 button:hover {
   cursor: pointer;
-  background-color: #64ffdb28;
+  background-color: var(--bHover);
 }
 .logo {
   position: absolute;
-  width: 300px;
+  width: 250px;
   z-index: 2;
   display: flex;
   align-items: center;
   margin: 1% 0 0 1%;
 }
 .logo h2 {
-  color: #a8b2d1;
+  color: var(--textColor);
 }
 .logo img {
   cursor: pointer;
@@ -71,7 +78,7 @@ button:hover {
   overflow: hidden;
   border-right: 3px solid;
   font-family: monospace;
-  font-size: 2em;
+  font-size: 16pt;
 }
 @keyframes typing {
   from {
@@ -107,15 +114,15 @@ button:hover {
 }
 .opis a {
   text-decoration: none;
-  color: #a8b2d1;
+  color: var(--textColor);
   transition: 0.5s;
 }
 .opis a:hover {
-  color: #64ffda;
+  color: var(--teal);
 }
 #colorfulDot {
   display: inline;
-  color: #64ffda;
+  color: var(--teal);
 }
 #photo {
   width: 640px;
@@ -131,12 +138,12 @@ button:hover {
 .email-right a {
   text-decoration: none;
   letter-spacing: 0.1em;
-  color: #a8b2d1;
+  color: var(--textColor);
   margin-bottom: 7%;
   transition: 0.3s;
 }
 .email-right a:hover {
-  color: #64ffda;
+  color: var(--teal);
   margin-bottom: 6%;
 }
 
@@ -154,16 +161,16 @@ button:hover {
   width: auto;
   height: 30px;
   color: white;
-  border: 1px solid #64ffda;
+  border: 1px solid var(--teal);
   border-radius: 10px;
   transition: 0.5s;
-  background-color: #112240;
+  background-color: var(--secondary);
 }
 #center2 button:hover {
-  background-color: #64ffdb28;
+  background-color: var(--bHover);
 }
 #process{
-  color:#64ffda;
+  color:var(--teal);
   font-size: 10pt;
   font-style: italic;
 }
@@ -199,7 +206,7 @@ button:hover {
   transition: 0.7s;
 }
 .text {
-  color: #a8b2d1;
+  color: var(--textColor);
   font-size: 16px;
   position: absolute;
   top: 50%;
@@ -222,7 +229,7 @@ button:hover {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-  color: #a8b2d1;
+  color: var(--textColor);
 }
 .aboutMe {
   width: 70%;
@@ -232,11 +239,11 @@ button:hover {
 }
 .aboutMe a {
   text-decoration: none;
-  color: #a8b2d1;
+  color: var(--textColor);
   transition: 0.5s;
 }
 .aboutMe a:hover {
-  color: #64ffda;
+  color: var(--teal);
 }
 .aboutMe h1 {
   color: white;
@@ -249,7 +256,7 @@ button:hover {
 }
 ul li::before {
   content: "▹";
-  color: #64ffda;
+  color: var(--teal);
 }
 .maturska img {
   width: 240px;
@@ -266,32 +273,32 @@ ul li::before {
 }
 footer {
   text-align: center;
-  color: #a8b2d1;
+  color: var(--textColor);
   padding-bottom: 1px;
 }
 #opisZadnji{
-  color: #64ffda;
+  color: var(--teal);
 }
 footer p {
   font-size: 10pt;
 }
 .outro {
   position: absolute;
-  width: 500px;
+  width: 250px;
   z-index: 3;
   display: flex;
   align-items: center;
   margin: 5% 0% 0% 1%;
 }
 #tekstic2 {
-  color: #a8b2d1;
+  color: var(--textColor);
   width: 22ch;
   animation: typing 35s steps(22), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
   font-family: monospace;
-  font-size: 2em;
+  font-size: 16pt;
 }
 @keyframes typing {
   from {
