@@ -9,7 +9,7 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-:root{
+:root {
   --primary: #0a192f;
   --secondary: #112240;
   --textColor: #a8b2d1;
@@ -158,7 +158,7 @@ button:hover {
   display: flex;
   flex-direction: column;
 }
-#center2 h2{
+#center2 h2 {
   color: white;
   text-align: center;
 }
@@ -175,8 +175,8 @@ button:hover {
 #center2 button:hover {
   background-color: var(--bHover);
 }
-#process{
-  color:var(--teal);
+#process {
+  color: var(--teal);
   font-size: 10pt;
   font-style: italic;
 }
@@ -276,7 +276,7 @@ ul li::before {
   width: 50%;
   font-size: 13pt;
 }
-#fourthPage h1{
+#fourthPage h1 {
   color: white;
 }
 footer {
@@ -284,7 +284,7 @@ footer {
   color: var(--textColor);
   padding-bottom: 1px;
 }
-#opisZadnji{
+#opisZadnji {
   color: var(--teal);
 }
 footer p {
@@ -319,60 +319,66 @@ footer p {
   }
 }
 
-
 /* Mobile */
 @media only screen and (max-width: 600px) {
-  body{
+  body {
     font-size: 10pt;
     padding: 2%;
   }
-  .box,.opis, .contact, .kontejneri, .overlay, #thirdPage, #fourthPage, .aboutMe{
+  .box,
+  .opis,
+  .contact,
+  .kontejneri,
+  .overlay,
+  #thirdPage,
+  #fourthPage,
+  .aboutMe {
     width: 100%;
   }
-  .email-right, .outro{
+  .email-right,
+  .outro {
     display: none;
   }
-  #photo{
+  #photo {
     width: 90%;
     height: 30%;
   }
-  .logo{
+  .logo {
     width: 50%;
   }
-  .logo img{
+  .logo img {
     width: 40px;
   }
-  .container{
+  .container {
     width: 46%;
   }
-  .overlay{
+  .overlay {
     font-size: 10pt;
   }
-  .text{
+  .text {
     font-size: 10pt;
   }
-  .contact img{
+  .contact img {
     width: 28px;
     height: 28px;
   }
-  #thirdPage{
+  #thirdPage {
     flex-direction: column;
   }
-  .maturska img{
+  .maturska img {
     width: 180px;
     height: 240px;
   }
-  .aboutMe{
+  .aboutMe {
     font-size: 12pt;
   }
-  .aboutMe ul{
+  .aboutMe ul {
     font-size: 11pt;
   }
-  #fourthPage{
+  #fourthPage {
     font-size: 12pt;
   }
-  footer p{
+  footer p {
     font-size: 6pt;
   }
-  
 }
