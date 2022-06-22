@@ -264,8 +264,8 @@ ul li::before {
   color: var(--teal);
 }
 .maturska img {
-  width: 240px;
-  height: 320px;
+  width: 270px;
+  height: 380px;
   border-radius: 10px;
 }
 
@@ -292,7 +292,7 @@ footer p {
 }
 .outro {
   position: absolute;
-  width: 250px;
+  width: 280px;
   z-index: 3;
   display: flex;
   align-items: center;
@@ -300,7 +300,7 @@ footer p {
 }
 #tekstic2 {
   color: var(--textColor);
-  width: 22ch;
+  width: 25ch;
   animation: typing 35s steps(22), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
